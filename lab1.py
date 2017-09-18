@@ -16,17 +16,17 @@ program_time = timer()
 # Load the files we will be using in this lab
 start_time = timer()
 
-x_test = np.loadtxt(fname="xtest.txt", dtype=np.float64, delimiter=',')
-y_test = np.loadtxt(fname="ytest.txt", dtype=np.uint8, delimiter=',')
+x_test = np.loadtxt(fname="dataset/xtest.txt", dtype=np.float64, delimiter=',')
+y_test = np.loadtxt(fname="dataset/ytest.txt", dtype=np.uint8, delimiter=',')
 
-h0_w = np.loadtxt(fname="W0.txt", dtype=np.float64, delimiter=',')
-h0_b = np.loadtxt(fname="B0.txt", dtype=np.float64, delimiter=',')
+h0_w = np.loadtxt(fname="dataset/W0.txt", dtype=np.float64, delimiter=',')
+h0_b = np.loadtxt(fname="dataset/B0.txt", dtype=np.float64, delimiter=',')
 
-h1_w = np.loadtxt(fname="W1.txt", dtype=np.float64, delimiter=',')
-h1_b = np.loadtxt(fname="B1.txt", dtype=np.float64, delimiter=',')
+h1_w = np.loadtxt(fname="dataset/W1.txt", dtype=np.float64, delimiter=',')
+h1_b = np.loadtxt(fname="dataset/B1.txt", dtype=np.float64, delimiter=',')
 
-output_w = np.loadtxt(fname="W2.txt", dtype=np.float64, delimiter=',')
-output_b = np.loadtxt(fname="B2.txt", dtype=np.float64, delimiter=',')
+output_w = np.loadtxt(fname="dataset/W2.txt", dtype=np.float64, delimiter=',')
+output_b = np.loadtxt(fname="dataset/B2.txt", dtype=np.float64, delimiter=',')
 
 total_time = timer() - start_time
 print('Loading of files took %.2fs' % total_time)
